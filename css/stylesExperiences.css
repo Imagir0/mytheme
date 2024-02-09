@@ -1,0 +1,59 @@
+/* @override 
+	http://www.perlerimagiro.fr/others/wordpress/wp-content/themes/mytheme/css/stylesExperiences.css?ver=4.7.3 */
+
+@charset "utf-8";
+
+body{
+    margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-image: url("../img/backexperiences.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center center;
+}
+
+/* Container */
+h2{
+	font-family: PermanentMarker;
+	font-size: 6vw;
+	margin-top: -30px;
+	margin-bottom: 0px;
+}
+h3{
+	font-family: PermanentMarker;
+	font-size: 3vw;
+	min-height: 100px;
+	text-align: center;
+	margin: -15px 0px -15px -200px ;
+}
+#container-experience{
+	width: 60%;
+	position: relative;
+	height: auto;
+	padding: 100px 50px;
+}
+.paragraphe-experience{
+	margin-bottom: 30px;
+	margin-left: 50px;
+	cursor: default;
+}
+.annee-entreprise{
+	font-family: Raleway-Bold;
+	padding: 10px 10px 0px;
+}
+.annee-experience{
+	font-family: Ubuntu;
+	padding: 10px 20px;
+}
+
+@media screen and (max-width: 1240px){
+	body{
+		overflow-y: visible;
+	}
+	.paragraphe-experience{
+		background-color: rgba(255,255,255,0.8);
+	}
+}
+/* /Container */

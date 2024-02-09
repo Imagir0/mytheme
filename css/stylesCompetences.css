@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-image: url("../img/backcompetences.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: center center;
+}
+
+/* Container */
+h2{
+	font-family: PermanentMarker;
+	font-size: 6vw;
+	margin-top: -40px;
+	margin-bottom: 30px;
+}
+h3{
+	font-family: PermanentMarker;
+	font-size: 3vw;
+	margin: -40px 0px 10px;
+	min-height: 140px;
+	text-align: center;
+}
+#container-competences{
+	width: 100%;
+	position: relative;
+	height: 100vh;
+	padding: 100px 20px;
+}
+#row-1{
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+#row-2{
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+#row-3{
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+#row-4{
+	float: left;
+	position: relative;
+	display: inline-block;
+	width: 25%;
+}
+.paragraphe-competences{
+	margin-bottom: 30px;
+	margin-left: 0px;
+	cursor: default;
+	min-height: 50px;
+}
+.num-competence{
+	color: #fff;
+    display: block;
+    margin-left: -50px;
+    position: absolute;
+	font-family: Ubuntu;
+	font-size: 2em;
+	margin-top: 0px;
+}
+.competence{
+	background-color: #414141;
+    padding: 10px 70px 10px 40px;
+    margin: 10px -20px 10px 10px;
+	font-family: Montserrat-Bold;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+}
+.images-competences{
+	margin: 0px;
+	padding: 0px;
+	margin-right: -60px;
+    padding-top: 1%;
+	display: inline-block;
+	margin-left: 10px;
+	float: right;
+}
+.images-competences img{
+	margin-left: 5px;
+}
+
+
+@media screen and (max-width: 1240px){
+	body{
+		overflow-y: visible;
+	}
+	h3{
+		margin: 20px 0px 10px;
+		min-height: 40px;
+		text-align: center;
+	}
+	#row-1{
+		float: left;
+		position: relative;
+		width: 100%;
+	}
+	#row-2{
+		float: left;
+		position: relative;
+		width: 100%;
+	}
+	#row-3{
+		float: left;
+		position: relative;
+		width: 100%;
+	}
+	#row-4{
+		float: left;
+		position: relative;
+		width: 100%;
+	}
+}
+
+/* /Container */

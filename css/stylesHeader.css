@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* Font du menu */
+@font-face{
+	font-family: 'Montserrat-Bold';
+	src: url('../fonts/Montserrat-Bold.eot?#iefix') 	format('embedded-opentype'),
+	url('../fonts/Montserrat-Bold.woff') 				format('woff'),
+	url('../fonts/Montserrat-Bold.ttf')  				format('truetype'),
+	url('../fonts/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Font Manuscrite */
+@font-face{
+	font-family: 'PermanentMarker';
+	src: url('../fonts/PermanentMarker.eot?#iefix') 	format('embedded-opentype'),
+	url('../fonts/PermanentMarker.woff') 				format('woff'),
+	url('../fonts/PermanentMarker.ttf')  				format('truetype'),
+	url('../fonts/PermanentMarker.svg#PermanentMarker') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Font Description */
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu.eot?#iefix') 				format('embedded-opentype'),
+	url('../fonts/Ubuntu.woff') 						format('woff'),
+	url('../fonts/Ubuntu.ttf')							format('truetype'),
+	url('../fonts/Ubuntu.svg#Ubuntu')					format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Font Dates */
+@font-face {
+	font-family: 'Raleway-Bold';
+	src: url('../fonts/Raleway-Bold.eot?#iefix')		format('embedded-opentype'),
+	url('../fonts/Raleway-Bold.woff')					format('woff'),
+	url('../fonts/Raleway-Bold.ttf')					format('truetype'),
+	url('../fonts/Raleway-Bold.svg#Raleway-Bold')		format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Header et menu */
+h1{
+	text-indent: -9999px;
+	margin-top: -59px;
+}
+#logo{
+	height: 50px;
+	z-index: 3;
+	position: fixed;
+}
+#logo:hover{
+	height: 50px;
+	z-index: 3;
+	position: fixed;
+}
+#primary-menu{
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	height: 50px;
+	z-index: 2;
+	position: absolute;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+#primary-menu ul{
+	list-style-type: none;
+	margin: 0;
+}
+#primary-menu ul li a{
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	width: 15%;
+	min-width: 15%;
+	padding: 15px 30px;
+	float: right;
+	position: relative;
+	font-family: Montserrat-Bold;
+	transition: all 0.2s;
+}
+#primary-menu ul li a:hover{
+	background-color: rgba(20,20,20,0.9);
+	letter-spacing: 3px;
+	transition: all 0.2s;
+}
+#primary-menu li.current_page_item a{
+	background-color: rgba(20,20,20,0.9);
+	letter-spacing: 3px;
+}
+#page{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+
+@media screen and (max-width: 1240px){
+	#primary-menu-access{ 
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+		position: relative;
+		float: right;
+		margin-right: 20px;
+		z-index: 4;
+		background-image: url("../img/open.png");
+		background-size: contain;
+	}
+	#primary-menu-access:hover{ 
+		cursor: pointer;
+		background-image: url("../img/openhover.png");
+	}
+	#primary-menu{ 
+		margin-left: 0px;
+		margin-top: 0px;
+		width: 100%;
+		height: 100vh;
+	}
+	#logo img{
+		height: 100px;
+		width: 100px;
+		z-index: 3;
+		position: fixed;
+		background-color: rgb(240,240,240);
+		display: block;
+	}
+	#logo img:hover{
+		background-color: rgb(250,250,250);
+	}
+	#primary-menu ul{
+		margin: 100px 0px 0px 0px;
+		padding: 0px;
+		background-color: rgb(240,240,240);
+		height: 100vh;
+	}
+	#primary-menu ul li{
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+	#primary-menu ul li a{
+		margin: 0px;
+		padding: 15px 0px 15px;
+		width: 100%;
+		color: black;
+		text-decoration: none;
+		font-family: Montserrat-Bold;
+		transition: all 0.2s;
+	}
+	#primary-menu ul li a:hover{
+		background-color: #ffffff;
+		letter-spacing: 0px;
+	}
+	#primary-menu li.current_page_item a{
+		letter-spacing: 0px;
+		background-color: #ffffff;
+	}
+}
+/* /Header et menu */
