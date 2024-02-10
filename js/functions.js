@@ -781,24 +781,6 @@ jQuery(function ($){
 				});
 			/** /Page Interets */
 		/* /Container */
-		
-		/* Footer */
-			/** Permet un écart de la sourie + animation footer*/
-			$("#footer").mouseover(function(){
-				$('#footer-marge').css({marginLeft: '0px'});
-				$('#footer').css({marginLeft: '0px'});
-				$('#footer').css("background-image", "url("+templateUrl+"/img/arrowactive.png)"); 
-			});
-			$("#footer-marge").mouseover(function(){
-				$('#footer').css({marginLeft: '0px'});
-				$('#footer').css("background-image", "url("+templateUrl+"/img/arrowactive.png)"); 
-			});
-			$("#footer-marge").mouseout(function(){
-				$('#footer').css({marginLeft: '95%'});
-				$('#footer-marge').css({marginLeft: '100%'});
-				$('#footer').css("background-image", "url("+templateUrl+"/img/arrow.png)"); 
-			});
-		/* /Footer */
 	}
 	else{
 		/** On rafraichi la page pour enlever le js sur le menu*/

@@ -2,12 +2,12 @@
 	get_header();
 ?>
 <br />
-<div id="container-home-title">
-	Thomas Brun<br />
-	Développeur web
-</div>
 <div id="container-home">
-	CV en ligne de mes études, de 2013 à 2023
+	<span id="name">Thomas Brun</span><br />
+	<span id="job">Développeur web / Graphiste</span>
+	<div id="container-home-content">
+		CV et projets de 2013 à 2023
+	</div>
 </div>
 <?php
 	get_footer();

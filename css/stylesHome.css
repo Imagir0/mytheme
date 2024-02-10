@@ -10,23 +10,93 @@ body{
 	background-attachment: fixed;
     background-position: center center;
 }
-
 /* Contenu Home */
-#container-home-title{
-	width: 100%;
-	position: relative;
-	margin-top: -100px;
-	padding-top: 100px;
-	font-size: 6vw;
-	padding: 150px 50px 20px;
-	font-family: PermanentMarker;
-	color: black;
+/* Pour les grands écrans */
+@media screen and (min-width: 1240px){
+	#container-home{
+		margin: 15vh 40vw 10vh 10vh;
+		padding: 2vh 0vw 0vh;
+		border-radius: 20px;
+		background-color: rgba(240,240,240,0.8);
+	}
+	#name{
+		width: 100%;
+		font-size: 4vw;
+		padding: 3vh 50px 20px;
+		font-family: RubikMonoOne-Regular;
+		color: black;
+	}
+	#job{
+		padding: 0vh 0px 0px 50px;
+		font-family: RubikMonoOne-Regular;
+		color: black;
+		font-size: 1.2rem;
+		display: block;
+		margin: 0;
+		overflow: hidden;
+		white-space: nowrap;
+		animation: typing 2s steps(48, end) forwards;
+		animation-delay: 1.2s;
+		width: 0;
+	}
+	#job:after{
+		content: '_';
+		animation: blinking 1s infinite;
+	}
+	@keyframes typing {
+	from { width: 0; }
+	to { width: 88%; }
+	}
+	@keyframes blinking {
+	from { color: transparent; }
+	to { color: black; }
+	}
+	#container-home-content{
+		margin: 1.5em;
+		position: relative;
+		font-family: Ubuntu;
+		padding: 1vh 3vw 4vh;
+		color: black;
+		font-size: 2vw;
+		animation: 3s fadeIn;
+	}
+	@keyframes fadeIn{
+		0% { opacity:0; }
+		66% { opacity:0; }
+		100% { opacity:1; }
+	}
 }
-#container-home{
-	position: relative;
-	font-family: Ubuntu;
-	padding: 0px 50px;
-	color: white;
-	font-size: 2.5vw;
+
+/* Pour les petits écrans */
+@media screen and (max-width: 1240px){
+	#container-home{
+		margin: 15vh 17vw 0vh;
+		padding: 2vh 0vw 0vh;
+		border-radius: 20px;
+		background-color: rgba(240,240,240,0.8);
+	}
+	#name{
+		width: 100%;
+		font-size: 4vw;
+		padding: 3vh 50px 20px;
+		font-family: RubikMonoOne-Regular;
+		color: black;
+	}
+	#job{
+		padding: 0vh 0px 0px 50px;
+		font-family: RubikMonoOne-Regular;
+		color: black;
+		font-size: 1.2rem;
+		display: block;
+		margin: 0;
+	}
+	#container-home-content{
+		margin: 1.5em;
+		position: relative;
+		font-family: Ubuntu;
+		padding: 1vh 3vw 4vh;
+		color: black;
+		font-size: 1.5em;
+	}
 }
 /* /Contenu Home */
