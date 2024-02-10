@@ -17,7 +17,7 @@ body{
 		margin: 15vh 40vw 10vh 10vh;
 		padding: 2vh 0vw 0vh;
 		border-radius: 20px;
-		background-color: rgba(240,240,240,0.8);
+		background-color: red;
 	}
 	#name{
 		width: 100%;
