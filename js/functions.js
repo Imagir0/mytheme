@@ -788,31 +788,36 @@ jQuery(function ($){
 		/** Menu responsive */
 		
 		/* Menu / header */
+			var primaryMenuAccessVisible = true;
 			$('#primary-menu').hide();
 			$('#logo').hide();
 
-			$("#primary-menu-access").toggle(function(){
-				$(this).css({"background-image": "url("+templateUrl+"/img/close.png)"});
-				$(this).css({"z-index": '3'});
-				$('#footer').show();
-				$('#footer').css({"margin-left": '0px'});
-				$('#footer').css({"background-image": 'url()'});
-				$('#primary-menu').show(100);
-				$('#logo').show(100);
-			}, function() {
-				$(this).css({"background-image": "url("+templateUrl+"/img/open.png)"});
-				$(this).mouseover(function(){
-					$(this).css({"background-image": "url("+templateUrl+"/img/openhover.png)"});
-				});
-				$(this).mouseout(function(){
-					$(this).css({"background-image": "url("+templateUrl+"/img/open.png)"});
-				});
-				$(this).css({"z-index": '3'});
-				$('#footer').hide();
-				$('#primary-menu').hide(100);
-				$('#logo').hide(100);
-			});
+			$("#primary-menu-access").click(function() {
+				// Toggle l'affichage de l'élément
+				$('#footer').toggle();
+				$('#primary-menu').toggle();
+				$('#logo').toggle();
 
+				// Gestion des propriétés CSS pour #primary-menu-access
+				primaryMenuAccessVisible = !primaryMenuAccessVisible; // Inverser l'état
+		
+				if (!primaryMenuAccessVisible) {
+            		$(this).css({
+						"background-image": "url(" + templateUrl + "/img/open.png)",
+						"z-index": '3'
+					}),
+					$('#footer').css({"margin-left": '0px'});
+					$('#footer').css({"height": '100px'});
+					$('#footer').css({"background-image": 'url()'});
+				} else {
+					// Si #primary-menu-access est invisible, réinitialiser les propriétés CSS
+					$(this).css({
+						"background-image": "url(" + templateUrl + "/img/close.png)",
+						"z-index": '3'
+					}),
+					$('#primary-menu ul').css({"padding-left": '0px'});
+				}
+			});
 		/* /Menu / header */
 
 		/* Footer */

@@ -58,11 +58,11 @@ body{
 		padding: 1vh 3vw 4vh;
 		color: black;
 		font-size: 2vw;
-		animation: 3s fadeIn;
+		animation: 4s fadeIn;
 	}
 	@keyframes fadeIn{
 		0% { opacity:0; }
-		66% { opacity:0; }
+		70% { opacity:0; }
 		100% { opacity:1; }
 	}
 }
