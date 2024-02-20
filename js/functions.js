@@ -42,16 +42,19 @@ jQuery(function ($){
 				$('#annee-competences-2').hide();
 				$('#annee-competences-3').hide();
 				$('#annee-competences-4').hide();
+				$('#annee-competences-5').hide();
 				
 				$("#etude-1").mouseover(function(){
 					$('#annee-competences-1').show(300);
 					$('#annee-competences-2').hide(300);
 					$('#annee-competences-3').hide(300);
 					$('#annee-competences-4').hide(300);
+					$('#annee-competences-5').hide(300);
 					$('#etude-1').css({"background-color": 'rgba(255,255,255,0.8)'});
 					$('#etude-2').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#etude-3').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#etude-4').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-5').css({"background-color": 'rgba(255,255,255,0)'});
 					$("#etude-1").css({"transition": 'all 0.2s'});
 				});
 				$("#etude-2").mouseover(function(){
@@ -59,10 +62,12 @@ jQuery(function ($){
 					$('#annee-competences-2').show(300);
 					$('#annee-competences-3').hide(300);
 					$('#annee-competences-4').hide(300);
+					$('#annee-competences-5').hide(300);
 					$('#etude-1').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#etude-2').css({"background-color": 'rgba(255,255,255,0.8)'});
 					$('#etude-3').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#etude-4').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-5').css({"background-color": 'rgba(255,255,255,0)'});
 					$("#etude-2").css({"transition": 'all 0.2s'});
 				});
 				$("#etude-3").mouseover(function(){
@@ -70,374 +75,94 @@ jQuery(function ($){
 					$('#annee-competences-2').hide(300);
 					$('#annee-competences-3').show(300);
 					$('#annee-competences-4').hide(300);
+					$('#annee-competences-5').hide(300);
 					$('#etude-1').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#etude-2').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#etude-3').css({"background-color": 'rgba(255,255,255,0.8)'});
 					$('#etude-4').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-5').css({"background-color": 'rgba(255,255,255,0)'});
 					$("#etude-3").css({"transition": 'all 0.2s'});
 				});
 				$("#etude-4").mouseover(function(){
-				$('#annee-competences-1').hide(300);
-				$('#annee-competences-2').hide(300);
-				$('#annee-competences-3').hide(300);
-				$('#annee-competences-4').show(500);
-				$('#etude-1').css({"background-color": 'rgba(255,255,255,0)'});
-				$('#etude-2').css({"background-color": 'rgba(255,255,255,0)'});
-				$('#etude-3').css({"background-color": 'rgba(255,255,255,0)'});
-				$('#etude-4').css({"background-color": 'rgba(255,255,255,0.8)'});
-				$("#etude-4").css({"transition": 'all 0.2s'});
-			});
+					$('#annee-competences-1').hide(300);
+					$('#annee-competences-2').hide(300);
+					$('#annee-competences-3').hide(300);
+					$('#annee-competences-4').show(300);
+					$('#annee-competences-5').hide(300);
+					$('#etude-1').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-2').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-3').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-4').css({"background-color": 'rgba(255,255,255,0.8)'});
+					$('#etude-5').css({"background-color": 'rgba(255,255,255,0)'});
+					$("#etude-4").css({"transition": 'all 0.2s'});
+				});
+				$("#etude-5").mouseover(function(){
+					$('#annee-competences-1').hide(300);
+					$('#annee-competences-2').hide(300);
+					$('#annee-competences-3').hide(300);
+					$('#annee-competences-4').hide(300);
+					$('#annee-competences-5').show(300);
+					$('#etude-1').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-2').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-3').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-4').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#etude-5').css({"background-color": 'rgba(255,255,255,0.8)'});
+					$("#etude-5").css({"transition": 'all 0.2s'});
+				});
 			/** /Page Etudes */
 		
 			/** Page Competences */
-				/** J'AI PAS REUSSI AVEC UN FOR :/ */
-				$("#image-competence-1").css({"visibility": 'hidden'});
-				$("#image-competence-2").css({"visibility": 'hidden'});
-				$("#image-competence-3").css({"visibility": 'hidden'});
-				$("#image-competence-4").css({"visibility": 'hidden'});
-				$("#image-competence-5").css({"visibility": 'hidden'});
-				$("#image-competence-6").css({"visibility": 'hidden'});
-				$("#image-competence-7").css({"visibility": 'hidden'});
-				$("#image-competence-8").css({"visibility": 'hidden'});
-				$("#image-competence-9").css({"visibility": 'hidden'});
-				$("#image-competence-10").css({"visibility": 'hidden'});
-				$("#image-competence-11").css({"visibility": 'hidden'});
-				$("#image-competence-12").css({"visibility": 'hidden'});
-				$("#image-competence-13").css({"visibility": 'hidden'});
-				$("#image-competence-14").css({"visibility": 'hidden'});
-				$("#image-competence-15").css({"visibility": 'hidden'});
-				$("#image-competence-16").css({"visibility": 'hidden'});
-				$("#image-competence-17").css({"visibility": 'hidden'});
-				$("#image-competence-18").css({"visibility": 'hidden'});
-				$("#image-competence-19").css({"visibility": 'hidden'});
-				$("#image-competence-20").css({"visibility": 'hidden'});
-			
-				$("#competence-1").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-1").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-1").css({"font-size": '2.5em'});
-					$("#num-competence-1").css({"transition": 'all 0.2s'});
-					$("#image-competence-1").css({"visibility": 'visible'});
+				function handleMouseEvents(competence) {
+					var numCompetence = competence.find(".num-competence");
+					var imageCompetence = competence.find(".images-competences");
+
+					imageCompetence.css({
+						"visibility": 'hidden',
+					});
+				
+					competence.mouseover(function() {
+						competence.css({
+							"background-color": 'rgba(255,255,255,0.8)',
+							"color": 'rgb(0,0,0)',
+						});
+						numCompetence.css({
+							"color": 'rgb(0,0,0)',
+							"font-size": '2.5em',
+							"transition": 'all 0.2s',
+						});
+						imageCompetence.css({
+							"visibility": 'visible',
+						});
+					});
+				
+					competence.mouseout(function() {
+						competence.css({
+							"background-color": '#414141',
+							"color": 'rgb(255,255,255)',
+						});
+						numCompetence.css({
+							"color": '#fff',
+							"font-size": '2em',
+							"transition": 'all 0.2s',
+						});
+						imageCompetence.css({
+							"visibility": 'hidden',
+						});
+					});
+				}
+				
+				// Appliquer la fonction aux compétences nécessaires
+				$(".competence").each(function() {
+					handleMouseEvents($(this));
 				});
-				$("#competence-1").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-1").css({"color": '#fff'});
-					$("#num-competence-1").css({"font-size": '2em'});
-					$("#num-competence-1").css({"transition": 'all 0.2s'});
-					$("#image-competence-1").css({"visibility": 'hidden'});
-				});
-				$("#competence-2").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-2").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-2").css({"font-size": '2.5em'});
-					$("#num-competence-2").css({"transition": 'all 0.2s'});
-					$("#image-competence-2").css({"visibility": 'visible'});
-				});
-				$("#competence-2").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-2").css({"color": '#fff'});
-					$("#num-competence-2").css({"font-size": '2em'});
-					$("#num-competence-2").css({"transition": 'all 0.2s'});
-					$("#image-competence-2").css({"visibility": 'hidden'});
-				});
-				$("#competence-3").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-3").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-3").css({"font-size": '2.5em'});
-					$("#num-competence-3").css({"transition": 'all 0.2s'});
-					$("#image-competence-3").css({"visibility": 'visible'});
-				});
-				$("#competence-3").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-3").css({"color": '#fff'});
-					$("#num-competence-3").css({"font-size": '2em'});
-					$("#num-competence-3").css({"transition": 'all 0.2s'});
-					$("#image-competence-3").css({"visibility": 'hidden'});
-				});
-				$("#competence-4").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-4").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-4").css({"font-size": '2.5em'});
-					$("#num-competence-4").css({"transition": 'all 0.2s'});
-					$("#image-competence-4").css({"visibility": 'visible'});
-				});
-				$("#competence-4").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-4").css({"color": '#fff'});
-					$("#num-competence-4").css({"font-size": '2em'});
-					$("#num-competence-4").css({"transition": 'all 0.2s'});
-					$("#image-competence-4").css({"visibility": 'hidden'});
-				});
-				$("#competence-5").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-5").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-5").css({"font-size": '2.5em'});
-					$("#num-competence-5").css({"transition": 'all 0.2s'});
-					$("#image-competence-5").css({"visibility": 'visible'});
-				});
-				$("#competence-5").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-5").css({"color": '#fff'});
-					$("#num-competence-5").css({"font-size": '2em'});
-					$("#num-competence-5").css({"transition": 'all 0.2s'});
-					$("#image-competence-5").css({"visibility": 'hidden'});
-				});
-				$("#competence-6").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-6").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-6").css({"font-size": '2.5em'});
-					$("#num-competence-6").css({"transition": 'all 0.2s'});
-					$("#image-competence-6").css({"visibility": 'visible'});
-				});
-				$("#competence-6").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-6").css({"color": '#fff'});
-					$("#num-competence-6").css({"font-size": '2em'});
-					$("#num-competence-6").css({"transition": 'all 0.2s'});
-					$("#image-competence-6").css({"visibility": 'hidden'});
-				});
-				$("#competence-7").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-7").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-7").css({"font-size": '2.5em'});
-					$("#num-competence-7").css({"transition": 'all 0.2s'});
-					$("#image-competence-7").css({"visibility": 'visible'});
-				});
-				$("#competence-7").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-7").css({"color": '#fff'});
-					$("#num-competence-7").css({"font-size": '2em'});
-					$("#num-competence-7").css({"transition": 'all 0.2s'});
-					$("#image-competence-7").css({"visibility": 'hidden'});
-				});
-				$("#competence-8").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-8").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-8").css({"font-size": '2.5em'});
-					$("#num-competence-8").css({"transition": 'all 0.2s'});
-					$("#image-competence-8").css({"visibility": 'visible'});
-				});
-				$("#competence-8").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-8").css({"color": '#fff'});
-					$("#num-competence-8").css({"font-size": '2em'});
-					$("#num-competence-8").css({"transition": 'all 0.2s'});
-					$("#image-competence-8").css({"visibility": 'hidden'});
-				});
-				$("#competence-9").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-9").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-9").css({"font-size": '2.5em'});
-					$("#num-competence-9").css({"transition": 'all 0.2s'});
-					$("#image-competence-9").css({"visibility": 'visible'});
-				});
-				$("#competence-9").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-9").css({"color": '#fff'});
-					$("#num-competence-9").css({"font-size": '2em'});
-					$("#num-competence-9").css({"transition": 'all 0.2s'});
-					$("#image-competence-9").css({"visibility": 'hidden'});
-				});
-				$("#competence-10").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-10").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-10").css({"font-size": '2.5em'});
-					$("#num-competence-10").css({"transition": 'all 0.2s'});
-					$("#image-competence-10").css({"visibility": 'visible'});
-				});
-				$("#competence-10").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-10").css({"color": '#fff'});
-					$("#num-competence-10").css({"font-size": '2em'});
-					$("#num-competence-10").css({"transition": 'all 0.2s'});
-					$("#image-competence-10").css({"visibility": 'hidden'});
-				});
-				$("#competence-11").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-11").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-11").css({"font-size": '2.5em'});
-					$("#num-competence-11").css({"transition": 'all 0.2s'});
-					$("#image-competence-11").css({"visibility": 'visible'});
-				});
-				$("#competence-11").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-11").css({"color": '#fff'});
-					$("#num-competence-11").css({"font-size": '2em'});
-					$("#num-competence-11").css({"transition": 'all 0.2s'});
-					$("#image-competence-11").css({"visibility": 'hidden'});
-				});
-				$("#competence-12").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-12").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-12").css({"font-size": '2.5em'});
-					$("#num-competence-12").css({"transition": 'all 0.2s'});
-					$("#image-competence-12").css({"visibility": 'visible'});
-				});
-				$("#competence-12").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-12").css({"color": '#fff'});
-					$("#num-competence-12").css({"font-size": '2em'});
-					$("#num-competence-12").css({"transition": 'all 0.2s'});
-					$("#image-competence-12").css({"visibility": 'hidden'});
-				});
-				$("#competence-13").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-13").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-13").css({"font-size": '2.5em'});
-					$("#num-competence-13").css({"transition": 'all 0.2s'});
-					$("#image-competence-13").css({"visibility": 'visible'});
-				});
-				$("#competence-13").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-13").css({"color": '#fff'});
-					$("#num-competence-13").css({"font-size": '2em'});
-					$("#num-competence-13").css({"transition": 'all 0.2s'});
-					$("#image-competence-13").css({"visibility": 'hidden'});
-				});
-				$("#competence-14").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-14").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-14").css({"font-size": '2.5em'});
-					$("#num-competence-14").css({"transition": 'all 0.2s'});
-					$("#image-competence-14").css({"visibility": 'visible'});
-				});
-				$("#competence-14").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-14").css({"color": '#fff'});
-					$("#num-competence-14").css({"font-size": '2em'});
-					$("#num-competence-14").css({"transition": 'all 0.2s'});
-					$("#image-competence-14").css({"visibility": 'hidden'});
-				});
-				$("#competence-15").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-15").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-15").css({"font-size": '2.5em'});
-					$("#num-competence-15").css({"transition": 'all 0.2s'});
-					$("#image-competence-15").css({"visibility": 'visible'});
-				});
-				$("#competence-15").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-15").css({"color": '#fff'});
-					$("#num-competence-15").css({"font-size": '2em'});
-					$("#num-competence-15").css({"transition": 'all 0.2s'});
-					$("#image-competence-15").css({"visibility": 'hidden'});
-				});
-				$("#competence-16").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-16").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-16").css({"font-size": '2.5em'});
-					$("#num-competence-16").css({"transition": 'all 0.2s'});
-					$("#image-competence-16").css({"visibility": 'visible'});
-				});
-				$("#competence-16").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-16").css({"color": '#fff'});
-					$("#num-competence-16").css({"font-size": '2em'});
-					$("#num-competence-16").css({"transition": 'all 0.2s'});
-					$("#image-competence-16").css({"visibility": 'hidden'});
-				});
-				$("#competence-17").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-17").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-17").css({"font-size": '2.5em'});
-					$("#num-competence-17").css({"transition": 'all 0.2s'});
-					$("#image-competence-17").css({"visibility": 'visible'});
-				});
-				$("#competence-17").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-17").css({"color": '#fff'});
-					$("#num-competence-17").css({"font-size": '2em'});
-					$("#num-competence-17").css({"transition": 'all 0.2s'});
-					$("#image-competence-17").css({"visibility": 'hidden'});
-				});
-				$("#competence-18").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-18").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-18").css({"font-size": '2.5em'});
-					$("#num-competence-18").css({"transition": 'all 0.2s'});
-					$("#image-competence-18").css({"visibility": 'visible'});
-				});
-				$("#competence-18").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-18").css({"color": '#fff'});
-					$("#num-competence-18").css({"font-size": '2em'});
-					$("#num-competence-18").css({"transition": 'all 0.2s'});
-					$("#image-competence-18").css({"visibility": 'hidden'});
-				});
-				$("#competence-19").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-19").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-19").css({"font-size": '2.5em'});
-					$("#num-competence-19").css({"transition": 'all 0.2s'});
-					$("#image-competence-19").css({"visibility": 'visible'});
-				});
-				$("#competence-19").mouseout(function(){
-					$(this).css({"background-color": '#414141'});
-					$(this).css({"color": 'rgb(255,255,255)'});
-					$("#num-competence-19").css({"color": '#fff'});
-					$("#num-competence-19").css({"font-size": '2em'});
-					$("#num-competence-19").css({"transition": 'all 0.2s'});
-					$("#image-competence-19").css({"visibility": 'hidden'});
-				});
-				$("#competence-20").mouseover(function(){
-					$(this).css({"background-color": 'rgba(255,255,255,0.8)'});
-					$(this).css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-20").css({"color": 'rgb(0,0,0)'});
-					$("#num-competence-20").css({"font-size": '2.5em'});
-					$("#num-competence-20").css({"transition": 'all 0.2s'});
-					$("#image-competence-20").css({"visibility": 'visible'});
-				});
-				$("#competence-20").mouseout(function(){
-				$(this).css({"background-color": '#414141'});
-				$(this).css({"color": 'rgb(255,255,255)'});
-				$("#num-competence-20").css({"color": '#fff'});
-				$("#num-competence-20").css({"font-size": '2em'});
-				$("#num-competence-20").css({"transition": 'all 0.2s'});
-				$("#image-competence-20").css({"visibility": 'hidden'});
-			});	
 			/** /Page Competences */
 			
 			/** Page Expérience */
 				$('#annee-experience-1').hide();
 				$('#annee-experience-2').hide();
 				$('#annee-experience-3').hide();
+				$('#annee-experience-4').hide();
+				$('#annee-experience-5').hide();
 				
 				$("#experience-1").mouseover(function(){
 					$('#annee-experience-1').show(300);
@@ -465,6 +190,20 @@ jQuery(function ($){
 					$('#experience-2').css({"background-color": 'rgba(255,255,255,0)'});
 					$('#experience-3').css({"background-color": 'rgba(255,255,255,0.8)'});
 					$("#experience-3").css({"transition": 'all 0.2s'});
+				});
+				$("#experience-4").mouseover(function(){
+					$('#annee-experience-4').show(300);
+					$('#annee-experience-5').hide(300);
+					$('#experience-4').css({"background-color": 'rgba(255,255,255,0.8)'});
+					$('#experience-5').css({"background-color": 'rgba(255,255,255,0)'});
+					$("#experience-4").css({"transition": 'all 0.2s'});
+				});
+				$("#experience-5").mouseover(function(){
+					$('#annee-experience-4').hide(300);
+					$('#annee-experience-5').show(300);
+					$('#experience-4').css({"background-color": 'rgba(255,255,255,0)'});
+					$('#experience-5').css({"background-color": 'rgba(255,255,255,0.8)'});
+					$("#experience-5").css({"transition": 'all 0.2s'});
 				});
 			/** /Page Expérience */
 			

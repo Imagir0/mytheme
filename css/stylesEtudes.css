@@ -13,10 +13,34 @@ body{
 
 /* Container */
 h2{
-	font-family: PermanentMarker;
-	font-size: 6vw;
-	margin-top: -30px;
+	display: none;
+}
+#title{
+	font-family: RubikMonoOne-Regular;
+	font-size: 4vw;
+	padding: 0px;
+	margin-top: 20px;
 	margin-bottom: 0px;
+}
+#moving-title{
+	font-family: RubikMonoOne-Regular;
+	color: black;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 0.5s steps(9, end) forwards;
+}
+#moving-title:after{
+	content: '_';
+	animation: blinking 1s infinite;
+}
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+@keyframes blinking {
+from { color: transparent; }
+to { color: black; }
 }
 #container-etude{
 	width: 60%;

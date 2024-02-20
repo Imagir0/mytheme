@@ -13,46 +13,49 @@ body{
 
 /* Container */
 h2{
-	font-family: PermanentMarker;
-	font-size: 6vw;
-	margin-top: -40px;
-	margin-bottom: 30px;
+	display: none;
+}
+#title{
+	font-family: RubikMonoOne-Regular;
+	font-size: 4vw;
+	margin-top: 40px;
+}
+#moving-title{
+	font-family: RubikMonoOne-Regular;
+	color: black;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 0.5s steps(9, end) forwards;
+}
+#moving-title:after{
+	content: '_';
+	animation: blinking 1s infinite;
+}
+@keyframes typing {
+from { width: 0; }
+to { width: 100%; }
+}
+@keyframes blinking {
+from { color: transparent; }
+to { color: black; }
 }
 h3{
-	font-family: PermanentMarker;
-	font-size: 3vw;
-	margin: -40px 0px 10px;
-	min-height: 140px;
+	font-family: RubikMonoOne-Regular;
+	font-size: 1.2vw;
+	margin: 50px 0px 0px;
+	min-height: 50px;
 	text-align: center;
 }
 #container-competences{
-	width: 100%;
+	width: 93%;
 	position: relative;
 	height: 100vh;
-	padding: 100px 20px;
+	padding: 100px 50px;
 }
-#row-1{
+.row{
 	float: left;
 	position: relative;
-	display: inline-block;
-	width: 25%;
-}
-#row-2{
-	float: left;
-	position: relative;
-	display: inline-block;
-	width: 25%;
-}
-#row-3{
-	float: left;
-	position: relative;
-	display: inline-block;
-	width: 25%;
-}
-#row-4{
-	float: left;
-	position: relative;
-	display: inline-block;
 	width: 25%;
 }
 .paragraphe-competences{
@@ -85,14 +88,12 @@ h3{
 	padding: 0px;
 	margin-right: -60px;
     padding-top: 1%;
-	display: inline-block;
 	margin-left: 10px;
 	float: right;
 }
 .images-competences img{
 	margin-left: 5px;
 }
-
 
 @media screen and (max-width: 1240px){
 	body{
@@ -103,26 +104,10 @@ h3{
 		min-height: 40px;
 		text-align: center;
 	}
-	#row-1{
-		float: left;
-		position: relative;
-		width: 100%;
-	}
-	#row-2{
-		float: left;
-		position: relative;
-		width: 100%;
-	}
-	#row-3{
-		float: left;
-		position: relative;
-		width: 100%;
-	}
-	#row-4{
+	.row{
 		float: left;
 		position: relative;
 		width: 100%;
 	}
 }
-
 /* /Container */
